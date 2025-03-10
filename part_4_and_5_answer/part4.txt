@@ -1,0 +1,6 @@
+1. Firestore Query
+With the userScore field calculated and saved in every document (recalculated upon any modification in ratings, rents, or activity)
+2.  Keeping 'recentlyActive' Current
+In order to keep the recentlyActive field always current:
+Client-Side: Refresh the field with the current epoch time whenever the user takes a significant action (e.g., login or interaction with important features).
+Server-Side (Recommended): Utilize Firebase Cloud Functions invoked by specific user activity events to update recentlyActive securely and reliably.
